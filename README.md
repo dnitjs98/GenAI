@@ -3,6 +3,16 @@ GenAI Models
 
 **1. Laya model of Jev for decision making**
 
+Laya is an open-weight, non-autoregressive decision model developed by Convai Innovations. It is not a small chatbot. It takes a state, such as an email, support ticket, agent trace or JSON object, and returns a structured decision with probabilities, rather than generating text token by token.
+
+Architecture
+
+It has 421M parameters: a ModernBERT-large encoder, a ~25M decision head, and a small head for "answer or escalate" routing. 
+
+It scores the candidate answers in a single forward pass using masked token scoring, and there is a multilingual router. 
+
+It is trained with RLCD (Reinforcement Learning for Calibrated Decisions), so that its confidence tracks how often it is actually right. 
+
 **2. JEPA (Joint Embedding Predictive Architecture)**
 
 JEPA (Joint Embedding Predictive Architecture) is a self-supervised learning approach proposed by Yann LeCun. Instead of reconstructing raw inputs (pixels or tokens), it predicts the representation of one part of the input from the representation of another.
