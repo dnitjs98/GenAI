@@ -5,13 +5,24 @@ GenAI Models
 
 Laya is an open-weight, non-autoregressive decision model developed by Convai Innovations. It is not a small chatbot. It takes a state, such as an email, support ticket, agent trace or JSON object, and returns a structured decision with probabilities, rather than generating text token by token.
 
-Architecture
+**Architecture**
 
 It has 421M parameters: a ModernBERT-large encoder, a ~25M decision head, and a small head for "answer or escalate" routing. 
 
 It scores the candidate answers in a single forward pass using masked token scoring, and there is a multilingual router. 
 
 It is trained with RLCD (Reinforcement Learning for Calibrated Decisions), so that its confidence tracks how often it is actually right. 
+
+**Use cases**
+
+It handles small structured calls like routing a ticket (billing, product, security or account), flagging something for review, or deciding whether to escalate to a larger model.
+
+A low-confidence verdict can be passed up to a bigger model, which is the "System 1 / System 2" split.
+
+It is cheap and fast: tens of milliseconds on a Tesla T4, and about 13.4 ms on an M3 Max via an independent MLX port. 
+
+The weights are Apache 2.0 and it can run entirely on local hardware. 
+
 
 **2. JEPA (Joint Embedding Predictive Architecture)**
 
