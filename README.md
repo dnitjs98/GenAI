@@ -4,7 +4,6 @@ Laya model of Jev for decision making
 
 JEPA (Joint Embedding Predictive Architecture)
 It contains:
-
   Context encoder: a ViT that sees only the context patches.
   Target encoder: an EMA copy of the context encoder, with no gradients. It encodes the full image, and the outputs are layer-normed.
   Predictor: a narrow ViT that takes the context tokens plus positional mask tokens and outputs embeddings for the target patches.
