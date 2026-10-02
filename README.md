@@ -2,7 +2,8 @@
 GenAI Models
 Laya model of Jev for decision making
 
-JEPA (Joint Embedding Predictive Architecture)
+**JEPA (Joint Embedding Predictive Architecture)**
+
 It contains:
   Context encoder: a ViT that sees only the context patches.
   Target encoder: an EMA copy of the context encoder, with no gradients. It encodes the full image, and the outputs are layer-normed.
