@@ -23,6 +23,15 @@ It is cheap and fast: tens of milliseconds on a Tesla T4, and about 13.4 ms on a
 
 The weights are Apache 2.0 and it can run entirely on local hardware. 
 
+**Limitations**
+
+Zero-shot is weak. The base model performs only slightly above the random baseline in zero-shot use. The project itself frames it as a base to fine-tune, not an out-of-the-box decision engine. Fine-tuned, it reaches about 0.766 on its typed-decision set. 
+
+Few options at a time. The docs recommend keeping multiple-choice questions to under roughly 20 options, and it did poorly on a 77-class benchmark (0.425). 
+
+Short inputs. The English checkpoint has a 512-token input budget; other variants extend it to 1,024. 
+
+Not hallucination-proof. It does not generate free text, but it can still make the wrong decision. 
 
 **2. JEPA (Joint Embedding Predictive Architecture)**
 
