@@ -28,3 +28,25 @@ Family
 I-JEPA: images, predicting masked block embeddings.
 V-JEPA / V-JEPA 2: video, with V-JEPA 2 extending to world-model and robot-planning uses.
 Newer variants for other modalities and for simplifying the training recipe.
+
+step    0  loss 0.4971  pred_std 0.1350
+step   50  loss 0.0159  pred_std 0.0009
+step  100  loss 0.0047  pred_std 0.0008
+step  150  loss 0.0045  pred_std 0.0008
+step  200  loss 0.0034  pred_std 0.0007
+step  250  loss 0.0031  pred_std 0.0007
+step  300  loss 0.0024  pred_std 0.0007
+step  350  loss 0.0023  pred_std 0.0007
+step  400  loss 0.0020  pred_std 0.0007
+step  450  loss 0.0020  pred_std 0.0008
+step  500  loss 0.0018  pred_std 0.0008
+step  550  loss 0.0019  pred_std 0.0010
+step  600  loss 0.0017  pred_std 0.0012
+step  650  loss 0.0018  pred_std 0.0012
+step  700  loss 0.0017  pred_std 0.0016
+step  750  loss 0.0016  pred_std 0.0019
+step  800  loss 0.0022  pred_std 0.0025
+step  850  loss 0.0018  pred_std 0.0037
+step  900  loss 0.0020  pred_std 0.0049
+step  950  loss 0.0016  pred_std 0.0070
+features: (8, 128)
