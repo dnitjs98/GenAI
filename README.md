@@ -122,5 +122,7 @@ features: (8, 128)
 
 
 **HMM** - produce tokens sequentially where label depends upon previous label and token depends upon label
+
 **SG** - Represent sentence in the form of label phrase tree structure
+
 **MEMM** - it predict label on the basis of previous label and sentence
