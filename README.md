@@ -119,3 +119,8 @@ step  850  loss 0.0018  pred_std 0.0037
 step  900  loss 0.0020  pred_std 0.0049
 step  950  loss 0.0016  pred_std 0.0070
 features: (8, 128)
+
+
+**HMM** - produce tokens sequentially where label depends upon previous label and token depends upon label
+**SG** - Represent sentence in the form of label phrase tree structure
+**MEMM** - it predict label on the basis of previous label and sentence
